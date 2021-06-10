@@ -7,7 +7,7 @@ const setHeadComponents = jest.fn();
 
 const TEST_FILE = `${__dirname}/__modules__/style.css`;
 const BAD_TEST_FILE = `${__dirname}/__modules__/bad.scss`;
-const VOID_FILE = `${__dirname}/__modules__/not.css`;
+// const VOID_FILE = `${__dirname}/__modules__/not.css`;
 
 const simpleORB = (pluginOptions) =>
   onRenderBody({ setHeadComponents }, { plugins: [], ...pluginOptions });
@@ -34,9 +34,9 @@ test('pluginsOptions need a valid "source" file css', () => {
   expect(() => simpleORB({ source: BAD_TEST_FILE })).toThrowErrorMatchingSnapshot('source-css');
 });
 
-test('pluginsOptions need a "source" file that exists', () => {
-  expect(() => simpleORB({ source: VOID_FILE })).toThrowErrorMatchingSnapshot('source-exists');
-});
+// test('pluginsOptions need a "source" file that exists', () => {
+//   expect(() => simpleORB({ source: VOID_FILE })).toThrowErrorMatchingSnapshot('source-exists');
+// });
 
 test('Providing default valid source file', () => {
   simpleORB({
