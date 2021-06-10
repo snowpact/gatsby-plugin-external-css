@@ -1,0 +1,53 @@
+{
+  "name": "gatsby-plugin-external-css",
+  "version": "1.0.0",
+  "description": "Add external custom css files to your generated html pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production yarn build",
+    "prepublish": "yarn test",
+    "test": "jest",
+    "test:cov": "jest && codecov",
+    "test:update": "jest --u",
+    "test:watch": "jest --watch",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "fs-extra": "^10.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "babel-jest": "^25.5.1",
+    "babel-preset-gatsby": "^0.4.2",
+    "babel-preset-gatsby-package": "^0.4.1",
+    "codecov": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "jest": "^25.5.4",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.21.30"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/snowpact/gatsby-plugin-external-css.git"
+  },
+  "author": "fr073n (https://snowpact.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snowpact/gatsby-plugin-external-css/issues"
+  },
+  "homepage": "https://github.com/snowpact/gatsby-plugin-external-css",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "plugin",
+    "script",
+    "css"
+  ]
+}

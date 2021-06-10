@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Providing default valid source file: source-valid 1`] = `
+Array [
+  Array [
+    <link
+      href="style.css?cb=uuid-123"
+      rel="stylesheet"
+      type="text/css"
+    />,
+  ],
+]
+`;
+
+exports[`pluginsOptions need a "source" file that exists: source-exists 1`] = `"ENOENT: no such file or directory, stat '/Users/murat/Projects/modules/gatsby-plugin-load-css/src/__tests__/__modules__/not.css'"`;
+
+exports[`pluginsOptions need a "source" property: source-attribute 1`] = `"gatsby-plugin-external-css needs a \\"source\\" option in order to work correctly"`;
+
+exports[`pluginsOptions need a valid "source" file css: source-css 1`] = `"gatsby-plugin-external-css needs a \\"source\\" option that exists and that is a css file"`;

@@ -1,0 +1,21 @@
+{
+  "name": "using-gatsby-plugin-external-css",
+  "version": "1.0.0",
+  "description": "Gatsby example site using gatsby-plugin-external-css",
+  "author": "fr073n",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.21.30",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
