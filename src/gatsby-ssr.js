@@ -40,7 +40,7 @@ export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
   }
 
   // Adding custom cache busting
-  const pathWithCacheBusting = `${basename}?cb=${uuidv1()}`;
+  const pathWithCacheBusting = `/${basename}?cb=${uuidv1()}`;
   setHeadComponents([
     <link key={COMPONENT_KEY} rel="stylesheet" type="text/css" href={pathWithCacheBusting} />,
   ]);

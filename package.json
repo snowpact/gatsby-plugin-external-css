@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-external-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add external custom css files to your generated html pages",
   "main": "index.js",
   "scripts": {
