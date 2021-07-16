@@ -4,7 +4,7 @@ exports[`Providing default valid source file: source-valid 1`] = `
 Array [
   Array [
     <link
-      href="style.css?cb=uuid-123"
+      href="/style.css?cb=uuid-123"
       rel="stylesheet"
       type="text/css"
     />,
